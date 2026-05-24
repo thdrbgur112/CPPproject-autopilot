@@ -29,8 +29,24 @@
 <br>
 <br>
 
+## 3. 기술 스택 (Tech Stack)
 
-# 3. FILE TREE
+### Environment & Simulation
+<img src="https://img.shields.io/badge/Webots-FF0000?style=for-the-badge&logo=Webots&logoColor=white"/> <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=Ubuntu&logoColor=white"/>
+
+### Programming Languages
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"/> <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=C%2B%2B&logoColor=white"/>
+
+### Libraries & Frameworks
+<img src="https://img.shields.io/badge/ROS2-22314E?style=for-the-badge&logo=ROS&logoColor=white"/> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=OpenCV&logoColor=white"/> <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white"/> <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=NumPy&logoColor=white"/>
+
+---
+
+<br>
+<br>
+
+
+# 4. FILE TREE
 
 ```
 ~/ros2_ws/
@@ -51,7 +67,7 @@
             └── cnn_node.py             (3번 노드: 전처리 이미지 수신 -> Waypoint 좌표 계산)
 ```
 
-# 4. PIPELINE 및 DATA FLOW
+# 5. PIPELINE 및 DATA FLOW
 
 1. autonomous_vehicle.cpp ( Webots node)
    -- 출력 토픽 : /image_raw
