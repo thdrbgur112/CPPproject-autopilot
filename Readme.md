@@ -66,7 +66,8 @@
         └── scripts/            ✅ Python 소스 코드 방 (CNN은 주로 파이썬 사용)
             └── cnn_node.py             (3번 노드: 전처리 이미지 수신 -> Waypoint 좌표 계산)
 ```
-
+<br>
+<br>
 # 5. PIPELINE 및 DATA FLOW
 
 1. autonomous_vehicle.cpp ( Webots node)
@@ -85,3 +86,5 @@
    -- /cmd_vel 명령을 받아서 webots 차량의 바퀴와 핸들모터를 돌림
 
 	 
+<br>
+<br>
