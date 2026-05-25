@@ -83,7 +83,8 @@
    -- /cmd_vel ( 조향 및 속도 명령)
 
 5. autonomous_vehicle.cpp (귀환)
-   -- /cmd_vel 명령을 받아서 webots 차량의 바퀴와 핸들모터를 돌림
+   -- /cmd_vel 명령을 받아서 webots 차량에 조향값 및 속도를 넣어 조향
+   
 
 	 
 <br>
