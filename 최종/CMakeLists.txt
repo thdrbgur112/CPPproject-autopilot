@@ -67,14 +67,14 @@ ament_target_dependencies(mpc_node
   geometry_msgs 
   std_msgs 
 )
-# mpc_test.cpp는 mpc_node.cpp 안에서 include 하므로 여기서 빌드 타겟으로 잡지 않아도 됩니다.
+# mpc_test.cpp는 mpc_node.cpp 안에서 include 
 target_link_libraries(mpc_node OsqpEigen::OsqpEigen)
 
 # ---------------------------------------------------
-# 5. 인스톨 (설치) 규칙 정의
+# 5. 인스톨규칙 정의
 # ---------------------------------------------------
 
-# C++ 실행 파일들 설치
+# C++ 실행 파일
 install(TARGETS
   webots_node
   cv_node
@@ -82,14 +82,10 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
-# [핵심] 파이썬 노드 (CNN) 설치 
-# CMake는 기본적으로 C++용이므로, 파이썬 파일을 ROS2가 인식하게 하려면 반드시 이 구문이 필요합니다.
+# (CNN)  
 install(PROGRAMS
   scripts/cnn.py # 파이썬 파일이 저장된 실제 경로에 맞게 수정하세요. (예: 그냥 cnn.py라면 src/cnn.py)
   DESTINATION lib/${PROJECT_NAME}
 )
 
-# ---------------------------------------------------
-# 6. 패키지 마무리
-# ---------------------------------------------------
 ament_package()
