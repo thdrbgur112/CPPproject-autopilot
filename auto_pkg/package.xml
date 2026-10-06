@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>auto_pkg</name>
+  <version>1.0.0</version>
+  <description>Webots camera-only lane keeping: OpenCV preprocessing, CNN waypoint regression, kinematic MPC (OSQP)</description>
+  <maintainer email="thdrbgur112@naver.com">송규혁</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>libopencv-dev</depend>
+  <depend>eigen</depend>
+  <!-- osqp, osqp-eigen: 소스 빌드 필요 (README 참고) -->
+  <exec_depend>python3-torch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

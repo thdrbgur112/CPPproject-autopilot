@@ -67,7 +67,7 @@ ament_target_dependencies(mpc_node
   geometry_msgs 
   std_msgs 
 )
-# mpc_test.cpp는 mpc_node.cpp 안에서 include 
+# KinematicMPC (src/kinematic_mpc.hpp)는 mpc_node.cpp 안에서 include
 target_link_libraries(mpc_node OsqpEigen::OsqpEigen)
 
 # ---------------------------------------------------
@@ -84,8 +84,10 @@ install(TARGETS
 
 # (CNN)  
 install(PROGRAMS
-  scripts/cnn.py # 파이썬 파일이 저장된 실제 경로에 맞게 수정하세요. (예: 그냥 cnn.py라면 src/cnn.py)
+  scripts/cnn_node.py
   DESTINATION lib/${PROJECT_NAME}
 )
+
+install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
 
 ament_package()
